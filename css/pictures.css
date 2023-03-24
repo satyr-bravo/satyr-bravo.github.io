@@ -11,11 +11,19 @@ body {
           font-size: 19px;
     }
     p {
-        font-size: 32px;
+        font-size: 6vw;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    body {
+          font-size: 19px;
+    }
+    p {
+        font-size: 2vw;
     }
 }
 
-@media only screen and (max-width: 786px) {
+@media screen and (max-aspect-ratio: 1/1) {
     /* For phone */
 .wrap-box {
     display: flex;
@@ -53,9 +61,14 @@ img{
     margin: 5px;
     margin-top: 40px;
 }
+h1 {
+    font-size: 15vw;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 }
 
-@media only screen and (min-width: 786px) {
+@media screen and (min-aspect-ratio: 1/1) {
     /* For PC */
 .wrap-box {
     display: flex;
@@ -98,6 +111,11 @@ img{
 img:hover {
     opacity: 0.5;
 }
+h1 {
+    font-size: 5vw;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 }
 
 .bottom-bar {
@@ -105,10 +123,13 @@ img:hover {
 }
 
 .desc-text {
-    font-size: 100%;
-    font-weight: lighter;
-    margin-left: 10px;
+    font-weight: bold;
     margin-right: auto;
+    margin-left: auto;
+    margin-top: 5px;
+    text-align: center;
+    flex-basis: 100%;
+    display: block;
 }
 
 h1 {
