@@ -6,5 +6,7 @@ body {
 
 header {
     text-align: center;
-    font-size: xx-large;
+    font-size: 500%;
+    display: block;
+    margin: 50vh auto;
 } 
