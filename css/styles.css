@@ -117,14 +117,17 @@ header {
 }
 
 .projects-button {
-    flex:1;
     margin: 5px;
-    padding: 10px;
-    border-style: solid;
+    padding: 10px 10px 10px 10px;
+    border-style: outset;
     border-color: white;
+    border-radius: 5px;
     text-align: center;
-    background-color: rgb(25, 25, 25);
+    background: rgba(255, 255, 255, 0.1);
     font-size: 150%;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
 }
 
 
