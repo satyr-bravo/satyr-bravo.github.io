@@ -1,3 +1,5 @@
+
+
 body {
     background-color: rgb(25, 25, 25);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='1' fill='%23808080' /%3E%3C/svg%3E");
@@ -6,21 +8,66 @@ body {
     font-family: 'Space Grotesk';
   }
 
-  @media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
     body {
           font-size: 19px;
     }
     p {
-        font-size: 32px;
+        font-size: 6vw;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    body {
+          font-size: 19px;
+    }
+    p {
+        font-size: 2vw;
     }
 }
 
-header {
-    text-align: center;
-    font-size: xx-large;
+
+
+@media screen and (max-aspect-ratio: 1/1) {
+    /* For mobile */
+    .mother-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin:1vw 2vw 1vw 2vw;
+        
+    }
+    .abt-text-name {
+        display: block;
+        text-align: left;
+        margin: 10px;
+        margin-bottom: 0px;
+        max-width: 512px;
+        padding: 10px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        flex-basis: 70%;
+    }
+    h1.name {
+        margin-top: 0px;
+    }
+    .abt-contacts {
+        min-width: fit-content;
+        font-size: 130%;
+        text-align: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 15vw;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
 }
 
 @media screen and (min-aspect-ratio: 1/1) {
+    /* For non-mobile */
     .mother-container {
         display: flex;
         flex-direction: row;
@@ -41,33 +88,21 @@ header {
     h1.name {
         margin-top: 0px;
     }
-}
-
-@media screen and (max-aspect-ratio: 1/1) {
-    .mother-container {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
+    .abt-contacts {
+        min-width: fit-content;
+        font-size: 130%;
+        text-align: center;
         justify-content: center;
-        margin:1vw 5vw 1vw 5vw;
-    }
-    .abt-text-name {
-        display: block;
-        text-align: left;
-        margin: 10px;
-        max-width: 512px;
-        min-width: 256px;
         padding: 10px;
-        padding-top: 0px;
-        flex-basis: 100%;
+        padding-top: 30px;
     }
-    h1.name {
-        margin-top: 0px;
-        font-size: 500%;
+    h1 {
+        font-size: 5vw;
+        font-weight: bold;
+        text-transform: uppercase;
     }
-
 }
+
 .pfp {
     max-width: 400px;
     min-width: 128px;
@@ -76,16 +111,6 @@ header {
     margin: 10px;
     padding: 10px;
     background-color: rgb(25, 25, 25);
-}
-
-
-.abt-contacts {
-    min-width: fit-content;
-    font-size: 130%;
-    text-align: center;
-    justify-content: center;
-    padding: 10px;
-    padding-top: 30px;
 }
 
 .socmedia {
@@ -128,13 +153,6 @@ header {
     text-transform: uppercase;
     font-weight: bold;
     display: block;
-}
-
-
-h1 {
-    font-size: 350%;
-    font-weight: bold;
-    text-transform: uppercase;
 }
 
 a {
