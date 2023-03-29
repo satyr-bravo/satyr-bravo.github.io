@@ -38,7 +38,7 @@ body {
     }
     .abt-text-name {
         display: block;
-        text-align: left;
+        text-align: center;
         margin: 10px;
         margin-bottom: 0px;
         max-width: 512px;
@@ -46,9 +46,15 @@ body {
         padding-bottom: 0px;
         padding-top: 0px;
         flex-basis: 70%;
+        line-height: 1.2;
     }
     h1.name {
         margin-top: 0px;
+        margin-bottom: 0px;
+        height: auto;
+        font-size: 500%;
+        font-weight: bolder;
+        line-height: 1.1;
     }
     .abt-contacts {
         min-width: fit-content;
@@ -80,11 +86,13 @@ body {
         margin: 10px;
         max-width: 512px;
         min-width: 256px;
+        height: auto;
         padding: 10px;
         padding-top: 0px;
     }
     h1.name {
         margin-top: 0px;
+        margin-bottom: 0px;
     }
     .abt-contacts {
         min-width: fit-content;
@@ -102,10 +110,11 @@ body {
 }
 
 .pfp {
-    max-width: 400px;
+    max-width: 512px;
     min-width: 128px;
-    max-height: 400px;
+    max-height: 512px;
     min-height: 128px;
+    width: 100%;
     margin: 10px;
     padding: 10px;
     background-color: rgb(25, 25, 25);
