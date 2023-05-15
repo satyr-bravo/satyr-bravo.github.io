@@ -1,40 +1,37 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     background-color: rgb(25, 25, 25);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='1' fill='%23808080' /%3E%3C/svg%3E");
     background-repeat: repeat;
     color: white;
     font-family: 'Space Mono';
+    margin: 0;
   }
-
-@media only screen and (max-width: 1000px) {
-    body {
-          font-size: 19px;
-    }
-    p {
-        font-size: 6vw;
-    }
-}
-@media only screen and (min-width: 1000px) {
-    body {
-          font-size: 19px;
-    }
-    p {
-        font-size: 2vw;
-    }
-}
-
-
 
 @media screen and (max-aspect-ratio: 1/1) {
     /* For mobile */
+    body {
+        font-size: 17px;
+    }
+    p {
+        font-size: 7vw;
+    }
     .mother-container {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: center;
-        margin:1vw 2vw 1vw 2vw;
-        
+        justify-content: center;        
+    }
+    .pfp {
+        max-width: 90vw;
+        min-width: 64px;
+        max-height: 90vh;
+        min-height: 64px;
     }
     .abt-text-name {
         display: block;
@@ -48,11 +45,11 @@ body {
         flex-basis: 70%;
         line-height: 1.2;
     }
-    h1.name {
+    p.name {
         margin-top: 0px;
         margin-bottom: 0px;
         height: auto;
-        font-size: 500%;
+        font-size: 400%;
         font-weight: bolder;
         line-height: 1.1;
     }
@@ -72,13 +69,25 @@ body {
 
 @media screen and (min-aspect-ratio: 1/1) {
     /* For non-mobile */
+    body {
+        margin:1vw 5vw 1vw 5vw;
+        font-size: 19px;
+    }
+    p {
+          font-size: 3vh;
+    }
     .mother-container {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        margin:1vw 5vw 1vw 5vw;
         height: 100vh;
+    }
+    .pfp{
+        max-width: 512px;
+        min-width: 64px;
+        max-height: 512px;
+        min-height: 64px;
     }
     .abt-text-name {
         display: block;
@@ -90,9 +99,10 @@ body {
         padding: 10px;
         padding-top: 0px;
     }
-    h1.name {
+    p.name {
         margin-top: 0px;
         margin-bottom: 0px;
+        font-size: 450%;
     }
     .abt-contacts {
         min-width: fit-content;
@@ -110,14 +120,11 @@ body {
 }
 
 .pfp {
-    max-width: 512px;
-    min-width: 128px;
-    max-height: 512px;
-    min-height: 128px;
+    display: flex;
     width: 100%;
     margin: 10px;
-    padding: 10px;
     background-color: rgb(25, 25, 25);
+    display: block;
 }
 
 .socmedia {
@@ -127,7 +134,7 @@ body {
 }
 
 @media screen and (min-aspect-ratio: 1/1) {
-    .projects-list{
+    .buttons-list{
         justify-content: center;
         flex:1;
         display: flex;
@@ -138,7 +145,7 @@ body {
 }
 
 @media screen and (max-aspect-ratio: 1/1) {
-    .projects-list{
+    .buttons-list{
         justify-content: center;
         flex:1;
         display: flex;
@@ -148,7 +155,7 @@ body {
     }    
 }
 
-.projects-button {
+.button {
     margin: 5px;
     padding: 10px 10px 10px 10px;
     border-style: outset;
@@ -169,4 +176,13 @@ a {
 img{
     width: 100%;
     object-fit: cover;
+}
+
+h1{
+    text-align: center;
+}
+
+footer{
+    flex-shrink: 0;
+    height: 64vh;
 }
