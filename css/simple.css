@@ -19,6 +19,17 @@ h1 {
     top: 42vh;
 }
 
+pre {
+  text-align: center;
+  font-size: 2vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  width: 100%;
+  top: 60vh;
+}
+
 .strip-top {
   background-image: url("../img/yellowstrip_tile.svg");
   background-color: rgb(25, 25, 25);

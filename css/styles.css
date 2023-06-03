@@ -10,7 +10,15 @@ body {
     color: white;
     font-family: 'Space Mono';
     margin: 0;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.801);
   }
+
+h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(42, 42, 42);
+    text-shadow: none;
+}
 
 @media screen and (max-aspect-ratio: 1/1) {
     /* For mobile */
@@ -62,8 +70,6 @@ body {
     }
     h1 {
         font-size: 15vw;
-        font-weight: bold;
-        text-transform: uppercase;
     }
 }
 
@@ -113,8 +119,6 @@ body {
     }
     h1 {
         font-size: 5vw;
-        font-weight: bold;
-        text-transform: uppercase;
     }
 }
 
@@ -167,6 +171,8 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     display: block;
+    text-shadow: none;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.801);
 }
 
 a {
@@ -175,6 +181,7 @@ a {
 img{
     width: 100%;
     object-fit: cover;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 h1{
