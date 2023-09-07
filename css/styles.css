@@ -105,8 +105,6 @@ h1 {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        /*! justify-content: space-around; */
-        height: 50vh;
         align-self: center;
         margin-bottom: 15vh;
     }
