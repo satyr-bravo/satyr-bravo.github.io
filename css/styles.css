@@ -93,7 +93,7 @@ h1 {
 @media screen and (min-aspect-ratio: 1/1) {
     /* For non-mobile */
     body {
-        margin:25vh 5vw 1vw 5vw;
+        margin:1vw 5vw 1vw 5vw;
         font-size: 19px;
         display: flex;
         flex-direction: column;
@@ -162,13 +162,6 @@ h1 {
     display: block;
 }
 
-.socmedia {
-    display: block;
-    margin-left: 5px;
-    margin-right: 5px;
-    font-size: 175%;
-}
-
 .button {
     margin: 5px;
     padding: 10px 10px 10px 10px;
@@ -181,26 +174,18 @@ h1 {
     font-size: 150%;
     text-transform: uppercase;
     font-weight: bold;
-    /*! display: inline-block; */
     text-shadow: none;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.801);
     flex: 1;
-    position: relative;
-    padding-left: 50px;
-    padding-right: 50px;
     flex-grow: 0;
 }
 
 .button::before {
-    content: "- ";
-    position: absolute;
-    left: 9%;
+    content: "-";
 }
 
 .button::after {
-    content: " -";
-    position: absolute;
-    right: 9%;
+    content: "-";
 }
 
 .button:hover::before {
