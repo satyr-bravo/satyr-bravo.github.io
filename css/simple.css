@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Space_Mono/SpaceMono-Regular.ttf') format('truetype');
+}  
+
 body {
   background-color: rgb(25, 25, 25);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='1' fill='%23808080' /%3E%3C/svg%3E");
