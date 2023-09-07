@@ -74,6 +74,14 @@ h1 {
     h1 {
         font-size: 15vw;
     }
+    .buttons-list{
+        justify-content: center;
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        min-width: 100%;
+    }    
 }
 
 @media screen and (min-aspect-ratio: 1/1) {
@@ -123,6 +131,15 @@ h1 {
     h1 {
         font-size: 5vw;
     }
+
+    .buttons-list{
+        justify-content: center;
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    }
 }
 
 .pfp {
@@ -140,47 +157,41 @@ h1 {
     font-size: 175%;
 }
 
-@media screen and (min-aspect-ratio: 1/1) {
-    .buttons-list{
-        justify-content: center;
-        flex:1;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        flex-basis: 100%;
-    }
-}
-
-@media screen and (max-aspect-ratio: 1/1) {
-    .buttons-list{
-        justify-content: center;
-        flex:1;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        min-width: 100%;
-    }    
-}
-
 .button {
     margin: 5px;
+    width: 25%;
+    align-self: center;
     padding: 10px 10px 10px 10px;
     border-style: outset;
     border-color: white;
-    border-radius: 5px;
     text-align: center;
-    background: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+    background: rgba(25, 25, 25, 0.2);
     font-size: 150%;
     text-transform: uppercase;
     font-weight: bold;
     display: block;
     text-shadow: none;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.801);
+    
+}
+
+.button:hover::before {
+    content: "[";
+}
+
+.button:hover::after {
+    content: "]";
+}
+
+.button:hover {
+    color: rgb(255, 255, 255);
 }
 
 a {
     color: rgb(255, 185, 34);
 }
+
 img{
     width: 100%;
     object-fit: cover;
