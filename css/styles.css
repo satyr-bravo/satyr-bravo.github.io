@@ -3,9 +3,10 @@
     font-style: normal;
     font-weight: 400;
     src: url('../fonts/Space_Mono/SpaceMono-Regular.ttf') format('truetype');
-  }  
+}
 
-html, body {
+html,
+body {
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -18,7 +19,7 @@ body {
     font-family: 'Space Mono';
     margin: 0;
     text-shadow: 4px 4px 2px rgb(0, 0, 0);
-  }
+}
 
 h1 {
     text-align: center;
@@ -33,30 +34,35 @@ h1 {
 @media screen and (max-aspect-ratio: 1/1) {
     /* For mobile */
 
-    html, body {
+    html,
+    body {
         max-width: 100%;
         overflow-x: hidden;
     }
 
     body {
-        font-size: calc(min(4.5vw,17px));
+        font-size: calc(min(4.5vw, 17px));
     }
+
     p {
         font-size: 7vw;
     }
-    .mother-container {
+
+    .intro-card {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: center;        
+        justify-content: center;
     }
+
     .pfp {
-        max-width: 90vw;
+        max-width: 76vw;
         min-width: 64px;
         max-height: 90vh;
         min-height: 64px;
     }
+
     .abt-text-name {
         display: block;
         text-align: center;
@@ -68,8 +74,9 @@ h1 {
         padding-top: 0px;
         flex-basis: 50%;
         line-height: 1.2;
-        font-size: calc(min(4.5vw,25px));
+        font-size: calc(min(4.5vw, 25px));
     }
+
     p.name {
         margin-top: 0px;
         margin-bottom: 0px;
@@ -78,6 +85,7 @@ h1 {
         font-weight: bolder;
         line-height: 1.1;
     }
+
     .abt-contacts {
         min-width: fit-content;
         font-size: 130%;
@@ -85,59 +93,84 @@ h1 {
         justify-content: center;
         padding: 10px;
     }
+
     h1 {
         font-size: 15vw;
     }
-    .buttons-list{
+
+    .buttons-list {
         justify-content: center;
-        flex:1;
+        flex: 1;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         min-width: 100%;
-    }    
+    }
 }
 
 @media screen and (min-aspect-ratio: 1/1) {
+
     /* For non-mobile */
     body {
-        margin:1vw 5vw 1vw 5vw;
-        font-size: calc(min(1.5vw, 19px));
+        margin: 1vw 5vw 1vw 5vw;
+        font-size: calc(min(1.5vw, 19px, 2vh));
         display: flex;
         flex-direction: column;
-        margin-top: 25vh;
+
+        margin-top: 0px;
+        justify-content: start;
     }
+
     p {
-          font-size: calc(min(2vw, 30px));
+        font-size: calc(min(2vw, 30px, 5vh));
+
     }
-    .mother-container {
+
+    .intro-card {
         display: flex;
         flex-direction: row;
         align-self: center;
-        margin-bottom: 15vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 75vh;
+        overflow: hidden;
+        margin-top: 10vh;
     }
-    .pfp{
+
+    .pfp {
         max-width: 484px;
-        min-width: 122px;
-        max-height: 484px;
-        min-height: 64px;
+        min-width: 200px;
+
+
+        height: calc(min(50vh, 50vw));
+
     }
+
     .abt-text-name {
         display: block;
         text-align: left;
         margin: 10px;
         max-width: 512px;
         min-width: 256px;
-        height: auto;
-        padding: 10px;
+        height: 50vh;
+
         padding-top: 0px;
-        /*! font-size: calc(min(1.5vw, 19px)); */
+
+        margin-top: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
     }
+
     p.name {
         margin-top: 0px;
         margin-bottom: 0px;
-        font-size: 450%;
+        font-size: 500%;
+        line-height: 100%;
     }
+
     .abt-contacts {
         min-width: fit-content;
         text-align: center;
@@ -145,11 +178,13 @@ h1 {
         padding: 10px;
         padding-top: 30px;
     }
+
     h1 {
-        font-size: 5vw;
+        font-size: calc(max(5vw, 7vh));
+        margin-top: 0;
     }
 
-    .buttons-list{
+    .buttons-list {
         display: inline-flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -158,17 +193,30 @@ h1 {
         justify-content: start;
         margin-top: 10px;
         margin-bottom: 10px;
+        height: 50vh;
     }
 }
 
-.pfp {
+.module {
+
     display: flex;
-    width: auto;
+    flex-direction: column;
+    justify-content: center;
+
+
+    min-height: 75vh;
+
+
+    justify-content: start;
+}
+
+.pfp {
+
+
     margin: 10px;
-    background-color: rgb(25, 25, 25);
+
     display: block;
-    /*! scale: 94%; */
-    height: 100%;
+
 }
 
 .button {
@@ -213,20 +261,21 @@ a {
     color: rgb(255, 185, 34);
 }
 
-img{
+img {
     width: 100%;
     object-fit: cover;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    height: 100%;
 }
 
-footer{
+footer {
     text-align: center;
     padding-top: 5%;
     position: sticky;
     bottom: 0;
 }
- 
+
 ::selection {
-   color: black;
-   background: white;
+    color: black;
+    background: white;
 }
