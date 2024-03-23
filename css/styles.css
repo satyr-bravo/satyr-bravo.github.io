@@ -1,9 +1,21 @@
-@font-face {
-    font-family: 'Space Mono';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/Space_Mono/SpaceMono-Regular.ttf') format('truetype');
-  }  
+@font-face { font-family: "InterDisplay"; font-style: normal; font-weight: 100; font-display: swap; src: url("../fonts/Inter-4.0/InterDisplay-Thin.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: italic; font-weight: 100; font-display: swap; src: url("../fonts/Inter-4.0/InterDisplay-ThinItalic.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: normal; font-weight: 200; font-display: swap; src: url("../fonts/Inter-4.0/InterDisplay-ExtraLight.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: italic; font-weight: 200; font-display: swap; src: url("../fonts/Inter-4.0/InterDisplay-ExtraLightItalic.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: normal; font-weight: 300; font-display: swap; src: url("../fonts/Inter-4.0/InterDisplay-Light.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: italic; font-weight: 300; font-display: swap; src: url("../fonts/Inter-4.0/InterDisplay-LightItalic.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/Inter-4.0/InterDisplay-Regular.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: italic; font-weight: 400; font-display: swap; src: url("../fonts/Inter-4.0/InterDisplay-Italic.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: normal; font-weight: 500; font-display: swap; src: url("../fonts/Inter-4.0/InterDisplay-Medium.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: italic; font-weight: 500; font-display: swap; src: url("../fonts/Inter-4.0/InterDisplay-MediumItalic.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: normal; font-weight: 600; font-display: swap; src: url("../fonts/Inter-4.0/InterDisplay-SemiBold.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: italic; font-weight: 600; font-display: swap; src: url("../fonts/Inter-4.0/InterDisplay-SemiBoldItalic.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: normal; font-weight: 700; font-display: swap; src: url("../fonts/Inter-4.0/InterDisplay-Bold.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: italic; font-weight: 700; font-display: swap; src: url("../fonts/Inter-4.0/InterDisplay-BoldItalic.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: normal; font-weight: 800; font-display: swap; src: url("../fonts/Inter-4.0/InterDisplay-ExtraBold.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: italic; font-weight: 800; font-display: swap; src: url("../fonts/Inter-4.0/InterDisplay-ExtraBoldItalic.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: normal; font-weight: 900; font-display: swap; src: url("../fonts/Inter-4.0/InterDisplay-Black.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: italic; font-weight: 900; font-display: swap; src: url("../fonts/Inter-4.0/InterDisplay-BlackItalic.woff2") format("woff2"); }
 
 html, body {
     max-width: 100%;
@@ -11,236 +23,239 @@ html, body {
 }
 
 body {
-    background-color: rgb(25, 25, 25);
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='1' fill='%23808080' /%3E%3C/svg%3E");
-    background-repeat: repeat;
-    color: white;
-    font-family: 'Space Mono';
+    background-color: #faeda9;
+    color: #2f2f2f;
+    font-family: 'InterDisplay';
     margin: 0;
-    text-shadow: 4px 4px 2px rgb(0, 0, 0);
   }
-
-h1 {
-    text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: rgb(42, 42, 42);
-    text-shadow: none;
-    outline: 10px white;
-    text-shadow: -1px -1px 0 rgb(97, 97, 97), 1px -1px 0 rgb(97, 97, 97), -1px 1px 0 rgb(97, 97, 97), 1px 1px 0 rgb(97, 97, 97);
-}
-
-@media screen and (max-aspect-ratio: 1/1) {
-    /* For mobile */
-
-    html, body {
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-
-    body {
-        font-size: calc(min(4.5vw,17px));
-    }
-    p {
-        font-size: 7vw;
-    }
-    .intro-card {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;        
-    }
-    .pfp {
-        max-width: 76vw;
-        min-width: 64px;
-        max-height: 90vh;
-        min-height: 64px;
-    }
-    .abt-text-name {
-        display: block;
-        text-align: center;
-        margin: 10px;
-        margin-bottom: 0px;
-        max-width: 512px;
-        padding: 10px;
-        padding-bottom: 0px;
-        padding-top: 0px;
-        flex-basis: 50%;
-        line-height: 1.2;
-        font-size: calc(min(4.5vw,25px));
-    }
-    p.name {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        height: auto;
-        font-size: 360%;
-        font-weight: bolder;
-        line-height: 1.1;
-    }
-    .abt-contacts {
-        min-width: fit-content;
-        font-size: 130%;
-        text-align: center;
-        justify-content: center;
-        padding: 10px;
-    }
-    h1 {
-        font-size: 14vw;
-    }
-    .buttons-list{
-        justify-content: center;
-        flex:1;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        min-width: 100%;
-        justify-content: start;
-    }    
-}
 
 @media screen and (min-aspect-ratio: 1/1) {
     /* For non-mobile */
     body {
-        margin:1vw 5vw 1vw 5vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        margin-top: 5vh;
         font-size: calc(min(1.5vw, 19px, 2vh));
         display: flex;
-        flex-direction: column;
-        /*! margin-top: 25vh; */
-        margin-top: 0px;
+        flex-direction: row;
         justify-content: start;
+        flex-wrap: wrap;
     }
     p {
           font-size: calc(min(2vw, 30px, 5vh));
-          /*! border: 1px solid red; */
     }
     .intro-card {
         display: flex;
-        flex-direction: row;
-        align-self: center;
-        /*! margin-bottom: 15vh; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        min-height: 75vh;
-        overflow: hidden;
-        margin-top: 10vh;
+        flex-direction: column;
+        align-self:flex-start;
+        align-items:flex-start;
+        text-align:left;
+        width: 22vw;
+        margin-left:5vw;
     }
-    .pfp{
-        max-width: 484px;
-        min-width: 200px;
-        /*! max-height: 484px; */
-        /*! min-height: 64px; */
-        height: calc(min(50vh,50vw));
-        /*! width: 100%; */
+    .showcase {
+        width: 69vw;
+    }
+    .video-link
+    {
+        display: block;
+        position: relative;
+        text-align: center;
+        color: white;
+        width:40vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5vh;
+    }
+    .video-link p{
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+    .video-link img{
+        object-fit: cover;
+        height: 25vw;
+        width: 100%;
+        border-radius: 1vh;
+        border: 4px solid black;
+        box-shadow: 10px 10px #2f2f2f;
+    }
+    .video-link:hover img{
+        background-color: white;
+        opacity: 90%;
+    }
+    .video-link:hover p{
+        visibility: hidden;
+    }
+    .video-link:hover p::after{
+        visibility: visible;
+        display: block;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        content: 'vimeo';
+        opacity: 50%;
     }
     .abt-text-name {
         display: block;
         text-align: left;
-        margin: 10px;
-        max-width: 512px;
-        min-width: 256px;
-        height: 50vh;
-        /*! padding: 10px; */
-        padding-top: 0px;
-        /*! font-size: calc(min(1.5vw, 19px)); */
-        margin-top: 0px;
-        padding-bottom: 0px;
-        margin-bottom: 0px;
+        margin:0%;
+        padding: 0%;
+        font-weight: 300;
     }
     p.name {
+        font-weight: 700;
         margin-top: 0px;
         margin-bottom: 0px;
         font-size: 500%;
         line-height: 100%;
     }
-    .abt-contacts {
-        min-width: fit-content;
-        text-align: center;
-        justify-content: center;
-        padding: 10px;
-        padding-top: 30px;
+    .buttons-list{
+        display: inline-flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: start;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
-    h1 {
-        font-size: calc(max(5vw,7vh));
-        margin-top: 0;
-    }
-    h1::before, h1::after {
+
+    .button::before {
         content: "-";
+        display: inline-block;
+        width: 0.5ch;
     }
-    .module {
-        min-height: 75vh;
+    
+    
+    .button:hover::before {
+        content: "[";
+        display: inline-block;
+        width: 0.5ch;
+    }
+    
+    .button:hover::after {
+        content: "]";
+    }
+    
+    .button:hover {
+        color: #FE4A49;
+    }
+    
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+    /* For mobile */
+    body {
+        margin-left: 2vw;
+        margin-right: 2vw;
+        margin-top: 5vh;
+        font-size: calc(min(1.5vh, 19px, 2vh));
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+    p {
+          font-size: calc(min(2vh, 30px, 5vh));
+    }
+    .intro-card {
+        display: flex;
+        flex-direction: column;
+        align-self:flex-start;
+        align-items:flex-start;
+        text-align:left;
+        width: 100%;
+        margin-left:5vw;
+    }
+    .showcase {
+        margin-top: 5vh;
+        width: 100%;
+    }
+    .video-link
+    {
+        display: block;
+        position: relative;
+        text-align: center;
+        color: white;
+        width: 84vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5vh;
+    }
+    .video-link p{
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+    .video-link img{
+        object-fit: cover;
+        height: 56vw;
+        width: 100%;
+        border-radius: 1vh;
+        border: 4px solid black;
+        box-shadow: 10px 10px #2f2f2f;
+    }
+    .video-link:hover img{
+        background-color: white;
+        opacity: 90%;
+    }
+    .video-link:hover p{
+        visibility: hidden;
+    }
+    .video-link:hover p::after{
+        visibility: visible;
+        display: block;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        content: 'vimeo';
+        opacity: 50%;
+    }
+    .abt-text-name {
+        display: block;
+        text-align: left;
+        margin:0%;
+        padding: 0%;
+        font-weight: 300;
+    }
+    p.name {
+        font-weight: 700;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 500%;
+        line-height: 100%;
     }
     .buttons-list{
         display: inline-flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        margin-left: auto;
-        margin-right: auto;
+        flex-wrap: nowrap;
         justify-content: start;
         margin-top: 10px;
         margin-bottom: 10px;
-        height: 50vh;
     }
 }
-.module {
-    /*! border: 1px solid red; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /*! align-items: center; */
-    /*! text-align: center; */
-    /*! overflow: hidden; */
-    /*! margin-top: 10vh; */
-    justify-content: start;
-}
 
-.pfp {
-    /*! display: flex; */
-    /*! width: auto; */
-    margin: 10px;
-    /*! background-color: rgb(25, 25, 25); */
-    display: block;
-    /*! width: 50vh; */
-}
 
 .button {
-    margin: 5px;
-    padding: 10px 10px 10px 10px;
-    border-style: outset;
-    border-color: white;
-    text-align: center;
+    margin-top: 0.5vh;
+    text-align: left;
     vertical-align: middle;
     text-decoration: none;
-    background: rgba(25, 25, 25, 0.2);
     font-size: 150%;
-    text-transform: uppercase;
+    text-transform: lowercase;
     font-weight: bold;
     text-shadow: none;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.801);
     flex: 1;
     flex-grow: 0;
-}
-
-.button::before {
-    content: "-";
-}
-
-.button::after {
-    content: "-";
-}
-
-.button:hover::before {
-    content: "[";
-}
-
-.button:hover::after {
-    content: "]";
-}
-
-.button:hover {
-    color: rgb(255, 255, 255);
+    width: 100%;
+    color: #177E89;
 }
 
 a {
@@ -253,15 +268,21 @@ img{
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     height: 100%;
 }
+.break {
+    flex-basis: 100%;
+    height: 0;
+  }
 
 footer{
     text-align: center;
     padding-top: 5%;
     position: sticky;
     bottom: 0;
+    width:100%;
+    font-weight: 200;
 }
  
 ::selection {
-   color: black;
+   color: #2f2f2f;
    background: white;
 }
