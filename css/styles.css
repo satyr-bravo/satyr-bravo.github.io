@@ -143,6 +143,11 @@ body {
     .button:hover {
         color: #FE4A49;
     }
+
+    hr{
+        width: 50%;
+        margin-left: 0px;
+    }
     
 }
 
@@ -240,6 +245,10 @@ body {
         margin-top: 10px;
         margin-bottom: 10px;
     }
+    hr{
+        width: 90%;
+        margin-left: 0px;
+    }
 }
 
 
@@ -281,6 +290,7 @@ footer{
     width:100%;
     font-weight: 200;
 }
+
  
 ::selection {
    color: #2f2f2f;
