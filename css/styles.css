@@ -17,15 +17,21 @@
 @font-face { font-family: "InterDisplay"; font-style: normal; font-weight: 900; font-display: swap; src: url("../fonts/Inter-4.0/InterDisplay-Black.woff2") format("woff2"); }
 @font-face { font-family: "InterDisplay"; font-style: italic; font-weight: 900; font-display: swap; src: url("../fonts/Inter-4.0/InterDisplay-BlackItalic.woff2") format("woff2"); }
 
+@font-face { font-family: "Jost"; font-style: normal; font-weight: 300; font-display: swap; src: url("../fonts/Jost/TrueType/Jost-300-Light.ttf") format("truetype"); }
+@font-face { font-family: "Jost"; font-style: normal; font-weight: 900; font-display: swap; src: url("../fonts/Jost/TrueType/Jost-900-Black.ttf") format("truetype"); }
+
+@font-face { font-family: "Poppins"; font-style: normal; font-weight: 800; font-display: swap; src: url("../fonts/Poppins/Poppins-ExtraBoldItalic.ttf") format("truetype"); }
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
 
 body {
-    background-color: #faeda9;
-    color: #2f2f2f;
-    font-family: 'InterDisplay';
+    background-color: #141414;
+    color: #FFFFFC;
+    font-family: 'Jost';
+    font-weight: 300;
     margin: 0;
   }
 
@@ -52,9 +58,13 @@ body {
         text-align:left;
         width: 22vw;
         margin-left:5vw;
+        margin-right: 5vw;
     }
     .showcase {
-        width: 69vw;
+        width: 60vw;
+        border-left: 1px solid white;
+    }    .button:hover::after {
+        content: "]";
     }
     .video-link
     {
@@ -66,6 +76,7 @@ body {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 5vh;
+        font-family: InterDisplay;
     }
     .video-link p{
         position: absolute;
@@ -80,8 +91,7 @@ body {
         height: 25vw;
         width: 100%;
         border-radius: 1vh;
-        border: 4px solid black;
-        box-shadow: 10px 10px #2f2f2f;
+        border: 2px solid #FFFFFC;
     }
     .video-link:hover img{
         background-color: white;
@@ -107,24 +117,31 @@ body {
         padding: 0%;
         font-weight: 300;
     }
+    p.abt{
+        margin-top: 2vh;
+        margin-bottom: 1vh;
+    }
     p.name {
-        font-weight: 700;
+        font-family: Poppins;
+        font-weight: 800;
         margin-top: 0px;
         margin-bottom: 0px;
         font-size: 500%;
         line-height: 100%;
     }
     .buttons-list{
+        font-family: InterDisplay;
         display: inline-flex;
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: start;
         margin-top: 10px;
         margin-bottom: 10px;
+        margin-left: 0.5vw;
     }
 
     .button::before {
-        content: "-";
+        content: "";
         display: inline-block;
         width: 0.5ch;
     }
@@ -136,16 +153,12 @@ body {
         width: 0.5ch;
     }
     
-    .button:hover::after {
-        content: "]";
-    }
-    
     .button:hover {
-        color: #FE4A49;
+        color: #D7263D;
     }
 
     hr{
-        width: 50%;
+        width: 80%;
         margin-left: 0px;
     }
     
@@ -264,11 +277,18 @@ body {
     flex: 1;
     flex-grow: 0;
     width: 100%;
-    color: #177E89;
+    color: #FFA552;
 }
 
-a {
-    color: rgb(255, 185, 34);
+#contacts > .button{
+    color: #7699D4;
+}
+
+#contacts{
+    color: #7699D4;
+}
+#contacts > .button:hover {
+    color: #D7263D;
 }
 
 img{
