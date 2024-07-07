@@ -90,7 +90,7 @@ body {
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    content: 'vimeo';
+    content: 'link';
     opacity: 50%;
 }
 .abt-text-name {
@@ -159,7 +159,6 @@ footer{
     bottom: 0;
     width:100%;
     font-weight: 200;
-    position: absolute;
 }
 
  
@@ -180,10 +179,12 @@ footer{
     .intro-card {
         width: 22vw;
         margin-right: 5vw;
+        border-right: 1px solid white;
+        padding-right: 5vw;
     }
     .showcase {
-        width: 60vw;
-        border-left: 1px solid white;
+        width: 55vw;
+        
     }    
     .video-link
     {
@@ -263,5 +264,8 @@ footer{
     }
     hr{
         width: 90%;
+    }
+    footer{
+        position: absolute;
     }
 }
