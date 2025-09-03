@@ -126,7 +126,7 @@ p.name {
     margin-bottom: 0px;
     font-size: 500%;
     line-height: 100%;
-    text-shadow: 0.15ch 0.15ch #38A3A5;
+    text-shadow: 0.075ch 0.075ch #38A3A5;
     text-transform: capitalize;
 }
 
@@ -176,12 +176,27 @@ footer{
     bottom: 0;
     width:100%;
     font-weight: 200;
+    color: #FFFFFC;
 }
 
- 
 ::selection {
    color: #2f2f2f;
    background: white;
+}
+
+.credits-table td:not(:first-child):not(:last-child) {
+    text-align: center;
+}
+
+.credits-table td:last-child {
+    text-align: right;
+}
+.footer-link {
+    color: #FFFFFC;
+}
+
+.footer-link:visited {
+    color: #FFFFFC;
 }
 
 @media screen and (min-aspect-ratio: 1/1) {
@@ -256,6 +271,19 @@ footer{
         width: 80%;
         color: #FFFFFC;
     }
+    
+    .credits-table {
+        width: 50vw;
+        margin-left: 23vw;
+        margin-right: 23vw;
+        font-size: calc(min(2.5vw, 25px, 2vh));
+    }
+
+    .credits-table td {
+        border-bottom: dotted;
+        height: 4vh;
+        text-align:left;
+    }
 }
 
 @media screen and (max-aspect-ratio: 1/1) {
@@ -272,7 +300,7 @@ footer{
         width: 100%;
     }
     .showcase {
-        margin-top: 5vh;
+        /*! margin-top: 0; */
         width: 100%;
     }
     .video-link
@@ -298,6 +326,17 @@ footer{
         width: 90%;
     }
     footer{
-        position: absolute;
+        /*! position: absolute; */
+    }
+     .credits-table {
+        width: 90vw;
+        margin-left: 3vw;
+        margin-right: auto;
+    }
+
+    .credits-table td {
+        border-bottom: dotted;
+        height: 4vh;
+        text-align:left;
     }
 }
