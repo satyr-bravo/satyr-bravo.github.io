@@ -335,7 +335,7 @@ footer{
     }
 
     .credits-table td {
-        border-bottom: dotted;
+        border-bottom: 2px dotted;
         height: 4vh;
         text-align:left;
     }
