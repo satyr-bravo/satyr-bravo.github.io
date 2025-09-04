@@ -102,7 +102,7 @@ body {
     position: absolute;
     top: 50%;
     left: 40%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -100%);
     content: 'external link';
     font-weight: 500;
     opacity: 100%;
