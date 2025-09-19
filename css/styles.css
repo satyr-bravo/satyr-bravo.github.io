@@ -213,6 +213,7 @@ footer{
         border-right: 1px solid #FFFFFC;
         padding-right: 2vw;
         margin: 0px;
+        margin-left: 5vw;
     }
     .showcase {
         width: 60vw;
