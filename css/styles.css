@@ -228,6 +228,7 @@ footer{
         margin-bottom: 10vh;
         padding: 2vw;
         padding-top: 0px;
+        grid-template-rows: auto 1fr;
     }
     .video-link p{
         font-weight: 200;
